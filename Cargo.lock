@@ -138,7 +138,7 @@ dependencies = [
  "rlimit",
  "serde",
  "serde_json",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "starknet_api",
  "tempfile",
  "thiserror 1.0.69",
@@ -847,7 +847,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sha2",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "starknet_api",
  "strum 0.25.0",
  "strum_macros 0.25.3",
@@ -865,7 +865,7 @@ dependencies = [
  "pretty_assertions",
  "rstest",
  "serde_json",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "starknet_api",
  "strum 0.25.0",
  "strum_macros 0.25.3",
@@ -970,7 +970,7 @@ dependencies = [
  "regex",
  "serde",
  "serde_json",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "strum 0.27.2",
  "strum_macros 0.27.2",
  "thiserror 2.0.17",
@@ -1245,7 +1245,7 @@ dependencies = [
  "rand 0.9.2",
  "sha2",
  "smol_str",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "thiserror 2.0.17",
 ]
 
@@ -1299,7 +1299,7 @@ dependencies = [
  "serde_json",
  "sha3",
  "smol_str",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "thiserror 2.0.17",
 ]
 
@@ -1376,7 +1376,7 @@ dependencies = [
  "itertools 0.14.0",
  "num-bigint",
  "num-traits",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "thiserror 2.0.17",
 ]
 
@@ -1417,7 +1417,7 @@ dependencies = [
  "serde",
  "serde_json",
  "smol_str",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "thiserror 2.0.17",
  "typetag",
 ]
@@ -1441,7 +1441,7 @@ dependencies = [
  "serde_json",
  "sha3",
  "smol_str",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "thiserror 2.0.17",
 ]
 
@@ -1498,7 +1498,7 @@ dependencies = [
  "num-bigint",
  "num-traits",
  "serde",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
 ]
 
 [[package]]
@@ -1577,7 +1577,7 @@ dependencies = [
  "serde_json",
  "sha2",
  "starknet-curve",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "stats_alloc",
  "tempfile",
  "thiserror 2.0.17",
@@ -1622,7 +1622,7 @@ dependencies = [
  "sha2",
  "sha3",
  "starknet-crypto",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "thiserror 2.0.17",
  "zip",
 ]
@@ -1784,7 +1784,7 @@ dependencies = [
  "num-bigint",
  "num-traits",
  "p256",
- "rand 0.8.5",
+ "rand 0.9.2",
  "rayon",
  "regex",
  "runtime",
@@ -1794,7 +1794,7 @@ dependencies = [
  "serde_json",
  "shared",
  "starknet-rust",
- "starknet-types-core",
+ "starknet-types-core 1.0.0",
  "starknet_api",
  "tempfile",
  "test-case",
@@ -2093,7 +2093,7 @@ dependencies = [
  "serde",
  "serde_json",
  "starknet-rust",
- "starknet-types-core",
+ "starknet-types-core 1.0.0",
  "starknet_api",
  "thiserror 2.0.17",
 ]
@@ -2399,9 +2399,9 @@ dependencies = [
 
 [[package]]
 name = "ctor"
-version = "0.6.2"
+version = "0.6.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eb230974aaf0aca4d71665bed0aca156cf43b764fcb9583b69c6c3e686f35e72"
+checksum = "424e0138278faeb2b401f174ad17e715c829512d74f3d1e81eb43365c2e0590e"
 dependencies = [
  "ctor-proc-macro",
  "dtor",
@@ -2526,7 +2526,7 @@ dependencies = [
  "serde_json",
  "shared",
  "starknet-rust",
- "starknet-types-core",
+ "starknet-types-core 1.0.0",
  "test-case",
  "thiserror 2.0.17",
  "tokio",
@@ -2567,7 +2567,7 @@ dependencies = [
  "rayon",
  "serde_json",
  "starknet-rust",
- "starknet-types-core",
+ "starknet-types-core 1.0.0",
  "starknet_api",
  "thiserror 2.0.17",
 ]
@@ -2874,7 +2874,7 @@ dependencies = [
  "serde_json",
  "shell-words",
  "tempfile",
- "toml_edit 0.23.7",
+ "toml_edit 0.23.9",
  "walkdir",
 ]
 
@@ -3303,7 +3303,7 @@ dependencies = [
  "openssl",
  "packages_validation",
  "project-root",
- "rand 0.8.5",
+ "rand 0.9.2",
  "regex",
  "scarb-api",
  "scarb-metadata",
@@ -3314,12 +3314,12 @@ dependencies = [
  "shared",
  "snapbox",
  "starknet-rust",
- "starknet-types-core",
+ "starknet-types-core 1.0.0",
  "starknet_api",
  "tempfile",
  "test-case",
  "tokio",
- "toml_edit 0.23.7",
+ "toml_edit 0.23.9",
  "tracing",
  "tracing-chrome",
  "tracing-subscriber",
@@ -3355,7 +3355,7 @@ dependencies = [
  "indoc",
  "itertools 0.14.0",
  "num-traits",
- "rand 0.8.5",
+ "rand 0.9.2",
  "rayon",
  "runtime",
  "sanitize-filename",
@@ -3366,12 +3366,12 @@ dependencies = [
  "serde_json",
  "shared",
  "starknet-rust",
- "starknet-types-core",
+ "starknet-types-core 1.0.0",
  "starknet_api",
  "strum 0.27.2",
  "strum_macros 0.27.2",
  "tokio",
- "toml_edit 0.23.7",
+ "toml_edit 0.23.9",
  "tracing",
  "universal-sierra-compiler-api",
  "url",
@@ -3395,7 +3395,7 @@ dependencies = [
  "console 0.16.1",
  "serde",
  "serde_json",
- "starknet-types-core",
+ "starknet-types-core 1.0.0",
 ]
 
 [[package]]
@@ -6140,7 +6140,7 @@ dependencies = [
  "serde_json",
  "shared",
  "starknet-rust",
- "starknet-types-core",
+ "starknet-types-core 1.0.0",
  "starknet_api",
  "thiserror 2.0.17",
 ]
@@ -6761,7 +6761,7 @@ dependencies = [
  "semver",
  "snapbox",
  "starknet-rust",
- "starknet-types-core",
+ "starknet-types-core 1.0.0",
  "starknet_api",
  "thiserror 2.0.17",
  "url",
@@ -6769,9 +6769,9 @@ dependencies = [
 
 [[package]]
 name = "shell-words"
-version = "1.1.0"
+version = "1.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "24188a676b6ae68c3b2cb3a01be17fbf7240ce009799bb56d5b1409051e78fde"
+checksum = "dc6fe69c597f9c37bfeeeeeb33da3530379845f10be461a66d16d03eca2ded77"
 
 [[package]]
 name = "shellexpand"
@@ -6839,7 +6839,7 @@ name = "sizeof_internal"
 version = "0.16.0-rc.1"
 source = "git+https://github.com/software-mansion-labs/sequencer.git?branch=v0.16.0-rc.1#d301ac673de353b7379003d95b77e1ecbdc43877"
 dependencies = [
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
 ]
 
 [[package]]
@@ -6946,7 +6946,7 @@ dependencies = [
  "primitive-types 0.14.0",
  "project-root",
  "promptly",
- "rand 0.8.5",
+ "rand 0.9.2",
  "regex",
  "reqwest",
  "rpassword",
@@ -6964,7 +6964,7 @@ dependencies = [
  "snapbox",
  "starknet-rust",
  "starknet-rust-crypto",
- "starknet-types-core",
+ "starknet-types-core 1.0.0",
  "strum 0.27.2",
  "strum_macros 0.27.2",
  "tempfile",
@@ -6972,7 +6972,7 @@ dependencies = [
  "thiserror 2.0.17",
  "tokio",
  "toml 0.9.8",
- "toml_edit 0.23.7",
+ "toml_edit 0.23.9",
  "tracing",
  "tracing-log",
  "tracing-subscriber",
@@ -7056,7 +7056,7 @@ dependencies = [
  "sha3",
  "starknet-core-derive",
  "starknet-crypto",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
 ]
 
 [[package]]
@@ -7085,7 +7085,7 @@ dependencies = [
  "rfc6979",
  "sha2",
  "starknet-curve",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "zeroize",
 ]
 
@@ -7095,7 +7095,7 @@ version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "22c898ae81b6409532374cf237f1bd752d068b96c6ad500af9ebbd0d9bb712f6"
 dependencies = [
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
 ]
 
 [[package]]
@@ -7164,7 +7164,7 @@ dependencies = [
  "sha3",
  "starknet-rust-core-derive",
  "starknet-rust-crypto",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
 ]
 
 [[package]]
@@ -7195,7 +7195,7 @@ dependencies = [
  "rfc6979",
  "sha2",
  "starknet-rust-curve",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "zeroize",
 ]
 
@@ -7205,7 +7205,7 @@ version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1977caca63a4e6439968abe0c9d8c0d2074df7641f1153e8a551f8200470d8da"
 dependencies = [
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
 ]
 
 [[package]]
@@ -7276,6 +7276,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "starknet-types-core"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8a12690813e587969cb4a9e7d8ebdb069d4bb7ec8d03275c5f719310c8e1f07c"
+dependencies = [
+ "blake2",
+ "digest",
+ "generic-array",
+ "lambdaworks-crypto",
+ "lambdaworks-math",
+ "lazy_static 1.5.0",
+ "num-bigint",
+ "num-integer",
+ "num-traits",
+ "rand 0.9.2",
+ "serde",
+ "zeroize",
+]
+
+[[package]]
 name = "starknet_api"
 version = "0.16.0-rc.1"
 source = "git+https://github.com/software-mansion-labs/sequencer.git?branch=v0.16.0-rc.1#d301ac673de353b7379003d95b77e1ecbdc43877"
@@ -7303,7 +7323,7 @@ dependencies = [
  "sha3",
  "sizeof",
  "starknet-crypto",
- "starknet-types-core",
+ "starknet-types-core 0.2.4",
  "strum 0.25.0",
  "strum_macros 0.25.3",
  "thiserror 1.0.69",
