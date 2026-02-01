@@ -36,7 +36,7 @@ jobs:
       - name: Build and archive tests
         run: cargo nextest archive --cargo-profile ci -p forge --archive-file 'nextest-archive-${{ runner.os }}.tar.zst'
       - name: Upload archive to workflow
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: nextest-archive-${{ runner.os }}
           path: nextest-archive-${{ runner.os }}.tar.zst
@@ -57,7 +57,7 @@ jobs:
       - name: Build and archive tests
         run: cargo nextest archive --cargo-profile ci -p forge --features cairo-native --archive-file 'nextest-archive-${{ runner.os }}-native.tar.zst'
       - name: Upload archive to workflow
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: nextest-archive-${{ runner.os }}-native
           path: nextest-archive-${{ runner.os }}-native.tar.zst
@@ -76,7 +76,7 @@ jobs:
       - uses: taiki-e/install-action@v2
         with:
           tool: nextest@0.9.98
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           name: nextest-archive-${{ runner.os }}
       - name: nextest partition ${{ matrix.partition }}/3
@@ -96,7 +96,7 @@ jobs:
       - uses: taiki-e/install-action@v2
         with:
           tool: nextest@0.9.98
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           name: nextest-archive-${{ runner.os }}-native
       - name: nextest partition ${{ matrix.partition }}/3
@@ -139,12 +139,12 @@ jobs:
           curl -L https://raw.githubusercontent.com/software-mansion/cairo-coverage/main/scripts/install.sh | sh
 
       - uses: actions/checkout@v6
-      - uses: asdf-vm/actions/install@1902764435ca0dd2f3388eea723a4f92a4eb8302
+      - uses: asdf-vm/actions/install@b7bcd026f18772e44fe1026d729e1611cc435d47
       - uses: ./.github/actions/setup-tools
       - uses: taiki-e/install-action@v2
         with:
           tool: nextest@0.9.98
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           name: nextest-archive-${{ runner.os }}
       - name: nextest partition ${{ matrix.partition }}/3
@@ -187,12 +187,12 @@ jobs:
           curl -L https://raw.githubusercontent.com/software-mansion/cairo-coverage/main/scripts/install.sh | sh
 
       - uses: actions/checkout@v6
-      - uses: asdf-vm/actions/install@1902764435ca0dd2f3388eea723a4f92a4eb8302
+      - uses: asdf-vm/actions/install@b7bcd026f18772e44fe1026d729e1611cc435d47
       - uses: ./.github/actions/setup-tools
       - uses: taiki-e/install-action@v2
         with:
           tool: nextest@0.9.98
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           name: nextest-archive-${{ runner.os }}-native
       - name: nextest partition ${{ matrix.partition }}/3
@@ -207,7 +207,7 @@ jobs:
         # No setup scarb action is used because we want to install multiple versions of scarb through asdf
         with:
           setup-scarb: 'false'
-      - uses: asdf-vm/actions/install@1902764435ca0dd2f3388eea723a4f92a4eb8302
+      - uses: asdf-vm/actions/install@b7bcd026f18772e44fe1026d729e1611cc435d47
       - run: cargo test --profile ci --package forge --features test_for_multiple_scarb_versions e2e::plugin_diagnostic
 
   test-requirements-check-special-conditions:
@@ -257,7 +257,7 @@ jobs:
     name: Test Oracles in Forge
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: ./.github/actions/setup-tools
         with:
           scarb-version: '2.13.1'
@@ -288,7 +288,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: asdf-vm/actions/install@05e0d2ed97b598bfce82fd30daf324ae0c4570e6
+      - uses: asdf-vm/actions/install@b7bcd026f18772e44fe1026d729e1611cc435d47
       - uses: ./.github/actions/setup-tools
       - name: Run tests
         run: cargo test --profile ci -p sncast
@@ -345,7 +345,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: dtolnay/rust-toolchain@0b1efabc08b657293548b77fb76cc02d26091c7e
+      - uses: dtolnay/rust-toolchain@f7ccc83f9ed1e5b9c81d8a67d7ad1a747e22a561
         with:
           toolchain: stable
           components: rustfmt
@@ -417,4 +417,4 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: typos-action
-        uses: crate-ci/typos@v1.40.0
+        uses: crate-ci/typos@v1.42.3
